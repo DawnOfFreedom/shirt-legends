@@ -2,39 +2,54 @@
 
 One-pager voor de vintage-voetbalshirtshandel van Adrie. Alles zit in één bestand: `index.html`.
 
-De shirtfoto's (Adries eigen topstukken), de Hanegem-schoenen mét signeerfoto, het shirtrek, de elftalfoto uit het familiearchief, de foto van Adrie met Van Hanegem, de sfeerbeelden uit Napels, Bilbao en De Kuip, het ingelijste Sneijder-shirt, het logo en de favicon zijn allemaal in het bestand zelf opgenomen. Alleen de grote hero-foto's (legendes) en de 1974-foto komen van Wikimedia Commons en vragen dus internet; een foto die daar niet laadt wordt automatisch overgeslagen.
+Alle foto's van Adrie zelf (topstukken, Hanegem-schoenen mét signeerfoto, het rek, familiearchief, De Boer, Van Hanegem, het ingelijste EK '88-shirt met originele tickets, de sfeerbeelden uit Rome, Napels, Bilbao, Valencia en De Kuip) zitten in het bestand zelf. Alleen de grote hero-foto's en de 1974-foto komen van Wikimedia Commons; een foto die daar niet laadt wordt automatisch overgeslagen.
 
 ## Live zetten
 
-Elke push naar `main` is na ongeveer een minuut live op GitHub Pages. Instelling staat op Settings > Pages > Deploy from a branch > `main` / root.
+Elke push naar `main` is na ongeveer een minuut live op GitHub Pages (Settings > Pages > `main` / root).
 
 ## Taal (NL / EN)
 
-Rechtsboven staat een vlaggetje: daarmee schakelt de bezoeker naar het Engels en terug. Alle Engelse teksten staan onderin `index.html` bij elkaar in het script, onder het kopje `VERTALINGEN`. Tekst wijzigen: de Nederlandse tekst in de HTML aanpassen én dezelfde key in die lijst. Directe Engelse link om te delen: `…/#en`.
+Vlaggetje rechtsboven schakelt naar Engels. Alle Engelse teksten staan onderin `index.html` onder `VERTALINGEN`. Directe Engelse link: `…/#en`.
 
-## Afgerond in deze ronde
+## Afgerond in deze ronde (feedback Adrie, 31 juli)
 
-- [x] Foto-verwisseling hersteld: familiearchief toont nu de echte elftalfoto, bij "Ontmoeting" staat Adrie met Van Hanegem
-- [x] Signeerfoto van Willem toegevoegd als derde beeld bij de adidas HANEGEM-schoenen
-- [x] Sfeersectie "Onderweg" uitgebreid naar zes beelden (Napels, Bilbao, De Kuip)
-- [x] Topstukken nu vast drie om drie (geen wees-kaart meer op brede schermen)
-- [x] Zoekblok compacter, met "Interesse? Bekijk Instagram of Vinted"
-- [x] Melding-mockup heet nu "Laatste drop van Shirt Legends"
-- [x] Hero volgt Adries rijtje: Feyenoord 1970, Pelé, Ajax 1972, Oranje 1974, Rossi 1982 (PABLITO), Maradona 1986, EK '88, het gouden trio 1989, Pirlo
-- [x] Alle em-dashes verwijderd (bouwcontrole aanwezig)
+- [x] Inlijsten: het ingelijste EK '88-shirt (Nº 12, met de originele tickets Düsseldorf en de finale) in plaats van Sneijder, plus de Van Basten-foto van dat moment eronder
+- [x] Sfeersectie: Kuip-tifo, de grote Maradona-muurschildering en het Valencia-museum erin; kleedkamerfoto eruit
+- [x] Bijschriften gecorrigeerd: Rome · Batigol, Bilbao · het museum van Athletic, Napels · Diego (D10S weg op verzoek)
+- [x] Nieuwe, betere foto's van De Boer-ontmoeting en Adrie met Van Hanegem
+- [x] "Veertig jaar voetbal" in de collectie-strip, "mancave" aan elkaar, "op jacht" in de zoektekst
+- [x] Inkoop duidelijker (tip van Karen): blok "Shirts liggen? Wij nemen ze over." met WhatsApp-link
+- [x] Contact: zichtbare WhatsApp- en mailknoppen met Adries nummer (+31 6 20 13 63 19)
+
+## Afgerond in de layout-ronde
+
+- [x] Verhaal-kop over de volle breedte, tekst en foto's eronder in twee kolommen
+- [x] Inlijstfoto's naast elkaar (geen groot leeg vlak meer)
+- [x] Hanegem-schoenfoto opnieuw gemaakt: nette crop in plaats van wegpoetsen
+- [x] Voorhoofden terug in beeld op de Van Hanegem-foto
+- [x] WhatsApp-knop in de navigatie, WhatsApp en Mail in de footer
+- [x] "Shirts liggen? Wij nemen ze over." ook als regel in het zoekblok
+- [x] Mobiel doorlopen: nav compact onder 520px, alle grids klappen netjes terug
+
+## Afgerond in de laatste ronde
+
+- [x] "Wij nemen ze graag over!" (kop en zoekblok)
+- [x] Mockup-melding "Laatste drop" verwijderd: er is geen live Vinted-koppeling, dus niets verzinnen
+- [x] Inlijsten in Onderweg-stijl: tekst bovenaan, de twee foto's groot naast elkaar eronder
+- [x] Hanegem-schoenfoto's vervangen door de onbewerkte originelen (zijaanzicht met witte hak en de stempel-close-up)
 
 ## Nog te doen voor livegang
 
-- [ ] **Instagram-handle checken**: de link `instagram.com/retroshirts.insta` geeft "profiel niet beschikbaar". Mogelijk is het account hernoemd (er bestaat een `retroshirts.rdam`, niet geverifieerd). Juiste handle bij Adrie opvragen en dan in `index.html` overal `retroshirts.insta` vervangen (staat op vier plekken, zoek-vervang volstaat).
-- [ ] **Domein koppelen**: bij de registrar een CNAME-record `www` naar `dawnoffreedom.github.io` (en voor het kale domein de vier GitHub Pages A-records), daarna in GitHub Settings > Pages het custom domain invullen en "Enforce HTTPS" aanvinken.
-- [ ] **Bijschriften checken door Adrie**: klopt "Bilbao · San Mamés" bij de kleedkamerfoto? (comment in de HTML wijst de plek; weghalen kan ook). En de plaatsbepaling "Napels" bij de Maradona-beelden.
-- [ ] **Maten en exacte seizoenen** bij de topstukken aanscherpen (comment in de HTML, vergeet de EN-vertaling niet).
-- [ ] Eventueel later: strakkere foto van het ingelijste Sneijder-shirt en een og:image.
+- [x] **Instagram-handle**: account bleek hernoemd naar `instagram.com/shirtlegends.nl` (731 volgers); alle links bijgewerkt.
+- [ ] **Domein koppelen**: CNAME `www` naar `dawnoffreedom.github.io` plus de vier GitHub Pages A-records voor het kale domein; daarna custom domain invullen in GitHub Settings > Pages en "Enforce HTTPS" aanvinken.
+- [ ] **Rome-check**: staat de Batistuta-mural inderdaad in Rome? (comment in de HTML bij het bijschrift)
+- [ ] Maten en exacte seizoenen bij de topstukken aanscherpen (comments in de HTML).
+- [x] **Professioneel mailadres**: `info@shirtlegends.nl` staat overal op de site (mailknoppen in Vinted-sectie en footer). Vóór de push even testmailen dat hij echt aankomt.
 
 ## Aandachtspunten
 
-- De juichende Van Basten-foto (EK '88) staat bewust niet op de site: dat is een professionele persfoto met auteursrecht van een fotopersbureau. Het EK-'88-moment zit al in de hero via een rechtenvrije Anefo-foto van de huldiging.
-- De foto's van Adrie met Van Hanegem en van het signeren staan er op uitdrukkelijk verzoek; het blijven persoonlijke foto's van een bekende Nederlander op een commerciële site. Bij twijfel: even aan Willem vragen.
-- Napels-beelden zijn eigen reisfoto's van straatkunst; gangbaar als sfeerbeeld, formeel ligt het auteursrecht van een mural bij de maker.
+- De Van Basten-foto en de Kuip-tifofoto zijn (waarschijnlijk) persfoto's; ze staan erop na uitdrukkelijk akkoord van Adrie en Jan. Risico bij dit soort beelden: fotobureaus sturen soms naheffingen bij commercieel gebruik.
+- De foto's met Van Hanegem staan er op verzoek; bij twijfel even aan Willem vragen.
 - Pagina werkt zonder JavaScript; hero-wissel, animaties en taalknop vallen dan weg.
-- Geen build-stap, geen dependencies. Aanpassen is: `index.html` bewerken, pushen, klaar.
+- Geen build-stap, geen dependencies: `index.html` bewerken, pushen, klaar.
