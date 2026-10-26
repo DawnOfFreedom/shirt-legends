@@ -2,7 +2,7 @@
 
 One-pager voor de vintage-voetbalshirtshandel van Adrie. Live op **https://shirtlegends.nl**.
 
-Alles zit in één bestand: `index.html` (ongeveer 3,6 MB). Alle foto's van Adrie zelf zitten als base64 in dat bestand ingebakken: topstukken, de Hanegem-schoenen met signeerfoto, het rek, het familiearchief, De Boer, Van Hanegem, het ingelijste EK '88-shirt met de originele tickets, en de sfeerbeelden uit Rome, Napels, Bilbao, Milaan en De Kuip. De hero draait op de foto's van de topstukken (ze worden uit de top-cards gehaald, dus een nieuw topstuk komt vanzelf in de hero). Alleen de 1974-foto in de strip komt nog van Wikimedia Commons; als die niet laadt verdwijnt de strip automatisch.
+Alles zit in één bestand: `index.html` (ongeveer 3,6 MB). Alle foto's van Adrie zelf zitten als base64 in dat bestand ingebakken: topstukken, de Hanegem-schoenen met signeerfoto, het rek, het familiearchief, De Boer, Van Hanegem, het ingelijste EK '88-shirt met de originele tickets, en de sfeerbeelden uit Rome, Napels, Bilbao, Milaan en De Kuip. De hero draait op de foto's van de topstukken (ze worden uit de top-cards gehaald, dus een nieuw topstuk komt vanzelf in de hero). Er worden geen foto's meer van buiten geladen: de WK '74-strip gebruikt dezelfde rekfoto als de collectie-strip (in zwart-wit, andere uitsnede); die foto staat één keer in de stylesheet als `.bg-rek`.
 
 Geen build-stap, geen dependencies. Aanpassen is: `index.html` bewerken, committen, pushen.
 
@@ -66,7 +66,7 @@ HTTPS staat aan via Settings › Pages › Enforce HTTPS. Het certificaat wordt 
 ## Aandachtspunten
 
 - **Persfoto's.** De Kuip-tifofoto is waarschijnlijk een persfoto. Hij staat erop na uitdrukkelijk akkoord van Adrie en Jan. Fotobureaus sturen bij commercieel gebruik soms naheffingen. De Van Basten-foto (EK '88) is in oktober 2026 weggehaald vanwege portretrecht.
-- **Portretrecht.** De foto's met Van Hanegem staan er op verzoek; bij twijfel even aan Willem vragen. De Wikimedia-spelersfoto's in de hero (Pelé, Cruijff, Maradona en anderen) zijn in oktober 2026 weggehaald: de licentie dekt het auteursrecht, niet het portretrecht, en met een gekoppelde shop is het gebruik commercieel.
+- **Portretrecht.** De foto's met Van Hanegem staan er op verzoek; bij twijfel even aan Willem vragen. De spelersfoto's uit openbare fotoarchieven (hero: Pelé, Cruijff, Maradona en anderen; de WK '74-strip) zijn in oktober 2026 weggehaald: de licentie dekt het auteursrecht, niet het portretrecht, en met een gekoppelde shop is het gebruik commercieel.
 - **Geen webshop op GitHub Pages.** GitHub staat Pages niet toe als gratis hosting voor sites die primair commerciële transacties faciliteren. Deze one-pager verkoopt zelf niets en verwijst door naar de Shopify-winkel op https://shop.shirtlegends.nl, Instagram en WhatsApp. De winkel en de betalingen draaien bij Shopify, niet op Pages, dus dat is in orde. Winkelfuncties horen daar, niet in dit bestand.
 - **Zonder JavaScript** werkt de pagina ook: alle tekst en ingebedde foto's zijn zichtbaar, alleen de hero-fotowissel, de animaties en de taalknop vallen weg.
 
