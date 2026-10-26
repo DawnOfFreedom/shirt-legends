@@ -413,6 +413,15 @@ a.merk:hover{color:var(--white);
 .rv{opacity:0;transform:translateY(36px);transition:opacity 1s cubic-bezier(.22,1,.36,1),transform 1s cubic-bezier(.22,1,.36,1)}
 .rv.in{opacity:1;transform:none}
 
+/* nav op tussenbreedtes (tablet, kleine laptop): stap voor stap compacter, zodat logo
+   en links nooit over elkaar lopen. Onder 761px geldt de mobiele nav hieronder. */
+.logo{flex:none}
+.nav-links a{white-space:nowrap}
+@media(min-width:761px) and (max-width:1560px){.nav-links{gap:24px}.nav-social{padding:11px 13px}.nav-social span{display:none}}
+@media(min-width:761px) and (max-width:1220px){.nav-links{gap:18px}.nav-links a{letter-spacing:.14em}.logo-type .l2{display:none}}
+@media(min-width:761px) and (max-width:1100px){.nav-links a[data-t="navVolg"]{display:none}}
+@media(min-width:761px) and (max-width:1000px){.nav-links a:not(.nav-cta){display:none}}
+
 @media(max-width:760px){
   nav{padding:16px 20px}.nav-links a:not(.nav-cta){display:none}
   .nav-links{gap:10px}
@@ -422,7 +431,7 @@ a.merk:hover{color:var(--white);
   .lang-btn{padding:11px 14px}
 }
 @media(max-width:520px){.logo-type .l2{display:none}.nav-links{gap:7px}.nav-cta{padding:10px 12px}.lang-btn{padding:10px 11px}}
-@media(max-width:420px){.logo-type{display:none}}
+@media(max-width:440px){.logo-type{display:none}}
 @media(max-width:480px){.vondst .v-details figcaption{letter-spacing:.12em;font-size:9px}}
 /* zonder JavaScript (documentviewers, WhatsApp-voorbeeld): alles direct tonen */
 .no-js .rv{opacity:1;transform:none;transition:none}
@@ -452,7 +461,7 @@ a.merk:hover{color:var(--white);
     <a href="#top" data-t="navTop">Topstukken</a>
     <a href="#lijst" data-t="navLijst">Inlijsten</a>
     <a href="#volg" data-t="navVolg">Volg de collectie</a>
-    <a href="https://www.instagram.com/shirtlegends.nl" target="_blank" rel="noopener" class="nav-cta nav-social merk merk-ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
+    <a href="https://www.instagram.com/shirtlegends.nl" target="_blank" rel="noopener" class="nav-cta nav-social merk merk-ig" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a>
     <a href="https://shop.shirtlegends.nl" target="_blank" rel="noopener" class="nav-cta nav-social merk merk-shop" aria-label="Shop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/><path d="M2.5 3.5h2.6l2.4 11.2a1.6 1.6 0 0 0 1.6 1.3h8.4a1.6 1.6 0 0 0 1.6-1.2l1.6-6.8H6.2"/></svg><span>Shop</span></a>
     <a href="https://wa.me/31620136319?text=Hoi!%20Ik%20heb%20een%20vraag%20over%20een%20shirt." target="_blank" rel="noopener" class="nav-cta nav-social merk merk-wa" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.4.8 1.9.8 2 .1.1.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.3.1.1.1.5-.1 1Z"/></svg><span>WhatsApp</span></a>
     <button class="nav-cta lang-btn" id="langBtn" type="button" aria-label="Taal / Language"><svg id="flagEN" viewBox="0 0 60 36" aria-hidden="true"><rect width="60" height="36" fill="#012169"/><path d="M0 0l60 36M60 0L0 36" stroke="#fff" stroke-width="7.2"/><path d="M0 0l60 36M60 0L0 36" stroke="#C8102E" stroke-width="3"/><path d="M30 0v36M0 18h60" stroke="#fff" stroke-width="12"/><path d="M30 0v36M0 18h60" stroke="#C8102E" stroke-width="7.2"/></svg><svg id="flagNL" viewBox="0 0 60 36" aria-hidden="true" style="display:none"><rect width="60" height="12" fill="#AE1C28"/><rect y="12" width="60" height="12" fill="#fff"/><rect y="24" width="60" height="12" fill="#21468B"/></svg><span id="langCode">EN</span></button>
